@@ -35,5 +35,13 @@ namespace ContratoLocacao.Infra.DataSource
             modelBuilder.Configurations.Add(new LocatarioContratoMapeamento());
             modelBuilder.Configurations.Add(new LocatarioMapeamento());
         }
+
+        public DbSet<Contratos> Contratos { get; set; }
+        public DbSet<Fiador> Fiador { get; set; }
+        public DbSet<FiadorContrato> FiadorContrato { get; set; }
+        public DbSet<Imovel> Imovel { get; set; }
+        public DbSet<Locador> Locador { get; set; }
+        public DbSet<Locatario> Locatario { get; set; }
+        public DbSet<LocatarioContrato> LocatarioContrato { get; set; }
     }
 }

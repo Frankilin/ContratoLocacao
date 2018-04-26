@@ -33,6 +33,10 @@ namespace ContratoLocacao.Infra.Mapeamento
             HasRequired(fc => fc.Locatario)
                 .WithMany(l => l.FiadorContrato)
                 .HasForeignKey(fc => fc.IdLocatario);
+
+            HasRequired(fc => fc.Fiador)
+                   .WithMany(f => f.FiadorContrato)
+                   .HasForeignKey(f => f.IdFiador);
             #endregion
         }
     }

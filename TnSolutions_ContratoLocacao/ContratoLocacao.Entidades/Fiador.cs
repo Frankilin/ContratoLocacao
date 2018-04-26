@@ -9,7 +9,6 @@ namespace ContratoLocacao.Entidades
     public class Fiador
     {
         public int IdFiador { get; set; }
-        public int IdFiadorContrato { get; set; }
         public string NomeFiador { get; set; }
         public string RgFiador { get; set; }
         public string CPFfiador { get; set; }
@@ -17,7 +16,7 @@ namespace ContratoLocacao.Entidades
         public string CelularFiador { get; set; }
         public DateTime DataCadastro { get; set; }
 
-        public virtual FiadorContrato FiadorContrato { get; set; }
+        public virtual List<FiadorContrato> FiadorContrato { get; set; }
 
     }
 }

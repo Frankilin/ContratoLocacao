@@ -15,7 +15,7 @@ namespace ContratoLocacao.Entidades
 
         #region Relacionamento
             public virtual Contratos Contratos { get; set; }
-            public virtual List<Fiador> Fiador { get; set; }
+            public virtual Fiador Fiador { get; set; }
             public virtual Locatario Locatario { get; set; }
         #endregion
     }

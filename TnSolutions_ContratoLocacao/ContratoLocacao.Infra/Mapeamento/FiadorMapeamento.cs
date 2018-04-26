@@ -18,9 +18,6 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(f => f.IdFiador)
                 .HasDatabaseGeneratedOption(DatabaseGeneratedOption.Identity);
 
-            Property(f => f.IdFiadorContrato)
-                .IsRequired();
-
             Property(f => f.NomeFiador)
                 .IsRequired()
                 .HasMaxLength(120)
@@ -44,13 +41,7 @@ namespace ContratoLocacao.Infra.Mapeamento
 
             Property(f => f.DataCadastro)
                 .IsRequired();
-
-            #region Relacionamento
-            HasRequired(f => f.FiadorContrato)
-                .WithMany(fc => fc.Fiador)
-                .HasForeignKey(f => f.IdFiador);
             
-            #endregion
         }
     }
 }

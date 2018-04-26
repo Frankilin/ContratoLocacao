@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataSource\Conexao.cs" />
+    <Compile Include="FuncoesGenericas\OperacoesGenericas.cs" />
     <Compile Include="Mapeamento\ContratosMapeamento.cs" />
     <Compile Include="Mapeamento\FiadorContratoMapeamento.cs" />
     <Compile Include="Mapeamento\FiadorMapeamento.cs" />
@@ -59,13 +60,10 @@
     <Compile Include="Mapeamento\LocatarioContratoMapeamento.cs" />
     <Compile Include="Mapeamento\LocatarioMapeamento.cs" />
     <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Persistencia\ImovelRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="FuncoesGenericas\" />
-    <Folder Include="Migracoes\" />
-    <Folder Include="Persistencia\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

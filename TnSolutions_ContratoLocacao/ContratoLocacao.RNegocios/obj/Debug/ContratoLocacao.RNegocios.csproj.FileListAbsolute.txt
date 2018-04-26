@@ -1,0 +1,11 @@
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\ContratoLocacao.RNegocios.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\ContratoLocacao.RNegocios.pdb
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\ContratoLocacao.Entidades.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\ContratoLocacao.Infra.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\EntityFramework.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\ContratoLocacao.Entidades.pdb
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\ContratoLocacao.Infra.pdb
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\EntityFramework.xml
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\obj\Debug\ContratoLocacao.RNegocios.csprojResolveAssemblyReference.cache
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\obj\Debug\ContratoLocacao.RNegocios.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\obj\Debug\ContratoLocacao.RNegocios.pdb

@@ -18,12 +18,15 @@ namespace ContratoLocacao.Entidades
         public string Cidade { get; set; }
         public string Cep { get; set; }
 
+        public DateTime DataInclusao { get; set; }
+        public DateTime DataAlteracao { get; set; }
+
         //public int TipoDoImovel { get; set; }//Casa,Apartamento
         // public string FimQueSeDestina { get; set; }//Ex: Residência, Veraneio
         public Boolean Ativo { get; set; }
 
         #region Relacionamento
-        public virtual List<Contratos> Contratos { get; set; }
+            public virtual List<Contratos> Contratos { get; set; }
         #endregion
     }
 }

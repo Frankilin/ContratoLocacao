@@ -29,7 +29,7 @@ namespace ContratoLocacao.Infra.Mapeamento
                 .HasMaxLength(200);
 
             Property(i => i.Complemento)
-                .IsRequired()
+                .IsOptional()
                 .HasMaxLength(70);
 
             Property(i => i.Numero)
@@ -49,12 +49,17 @@ namespace ContratoLocacao.Infra.Mapeamento
                 .HasMaxLength(18);
 
             Property(i => i.Cep)
-                .IsRequired()
+                .IsOptional()
                 .HasMaxLength(10);
 
             Property(i => i.Ativo)
                 .IsRequired();
 
+            Property(i => i.DataInclusao)
+                .IsRequired();
+
+            Property(i => i.DataAlteracao)
+                .IsOptional();
 
 
         }

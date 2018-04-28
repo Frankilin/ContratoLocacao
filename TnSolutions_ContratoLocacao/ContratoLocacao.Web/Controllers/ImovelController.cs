@@ -38,7 +38,6 @@ namespace ContratoLocacao.Web.Controllers
             {
                 if(ModelState.IsValid)
                 {
-                    ImovelNegocios imn = new ImovelNegocios();
                     Imovel i = new Imovel();
 
                     i.NomeImovel    = modelo.NomeImovel;
@@ -49,9 +48,11 @@ namespace ContratoLocacao.Web.Controllers
                     i.Estado        = modelo.Estado;
                     i.Cidade        = modelo.Cidade;
                     i.Cep           = modelo.Cep;
-                    i.Ativo         = modelo.Ativo;
+                    //i.Ativo         = modelo.Ativo;
 
-                    imn.NovoImovel(i);
+
+                    ImovelNegocios imn = new ImovelNegocios();
+                    i = imn.NovoImovel(i);
 
                     TempData["Mensagem"] = "Imóvel cadastrado com sucesso!";
                     TempData["Resposta"] = "Sucesso";

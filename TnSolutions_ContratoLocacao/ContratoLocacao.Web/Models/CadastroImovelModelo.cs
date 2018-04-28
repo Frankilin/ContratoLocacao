@@ -42,7 +42,6 @@ namespace ContratoLocacao.Web.Models
         [DisplayFormat(DataFormatString ="{00.000-000}")]
         [DataType(DataType.PostalCode)]
         public string Cep { get; set; }
-
-        public Boolean Ativo { get; set; }
+        
     }
 }

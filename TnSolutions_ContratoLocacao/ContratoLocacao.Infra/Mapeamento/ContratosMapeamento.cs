@@ -50,8 +50,11 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(c => c.IdLocador)
                 .IsRequired();
 
+            Property(c => c.IdImovel)
+                .IsRequired();
+
             #region Relacionamentos
-            
+
             //Locador
             HasRequired(c => c.Locador)
                 .WithMany(l => l.Contratos)
@@ -59,9 +62,9 @@ namespace ContratoLocacao.Infra.Mapeamento
 
             //Imovel
             HasRequired(c => c.Imovel)
-                .WithMany(i => i.Contratos)
-                .HasForeignKey(c => c.IdImovel);
-          
+                .WithMany(i => i.Contrato)
+                .HasForeignKey(i => i.IdImovel);
+
             #endregion
 
         }

@@ -13,39 +13,22 @@ namespace ContratoLocacao.Infra.Persistencia
     {
         public List<Imovel> ImovelLocador(int IdImovel)
         {
-            try
+            using (Conexao cc = new Conexao())
             {
-                using (Conexao cc = new Conexao())
-                {
-                    return cc.Imovel
-                            .Where(i => i.IdImovel == IdImovel)
-                            .ToList();
-                }
-
-            }
-            catch (Exception i)
-            {
-
-                throw i;
+                return cc.Imovel
+                        .Where(i => i.IdImovel == IdImovel)
+                        .ToList();
             }
         }
 
 
         public override List<Imovel> Todos()
         {
-            try
+            using (Conexao cc = new Conexao())
             {
-                using (Conexao cc = new Conexao())
-                {
-                    return cc.Imovel
-                        .OrderBy(i => i.NomeImovel)
-                        .ToList();
-                }
-            }
-            catch (Exception i)
-            {
-
-                throw i;
+                return cc.Imovel
+                    .OrderBy(i => i.NomeImovel)
+                    .ToList();
             }
         }
 

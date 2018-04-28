@@ -21,7 +21,7 @@ namespace ContratoLocacao.Entidades
 
         public int IdLocador { get; set; }//Relacionamento com Locador
         
-        public int IdImovel { get; set; }//Objeto da locação
+        public int IdImovel { get; set; }
 
 
 

@@ -24,16 +24,18 @@ namespace ContratoLocacao.RNegocios
                 {
                     //Passa a data e hora para o campo DataInclusao
                     ImovelRepositorio ir = new ImovelRepositorio();
+                    I.Ativo = true;
                     I.DataInclusao = DateTime.Now;
+                    I.DataAlteracao = null;
 
                     ir.Insert(I);
                     return I;
                 }
             }
-            catch (Exception)
+            catch (Exception e)
             {
 
-                throw;
+                throw e;
             }
         }
     }

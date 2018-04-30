@@ -42,13 +42,19 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(l => l.CelularLocador)
                 .IsRequired()
                 .HasMaxLength(14);
-
+                
             Property(l => l.TelFixoLocador)
                 .IsRequired()
                 .HasMaxLength(13);
 
             Property(l => l.Padrao)
                 .IsRequired();
+
+            //#region Relacionamento
+            //    HasRequired(l => l.ImovelLocador)
+            //       .WithMany(il => il.Locador)
+            //       .HasForeignKey(i => i.IdLocador);
+            //#endregion
         }
     }
 }

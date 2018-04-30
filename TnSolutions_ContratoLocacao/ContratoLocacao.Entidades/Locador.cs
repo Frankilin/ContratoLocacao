@@ -22,6 +22,8 @@ namespace ContratoLocacao.Entidades
 
         #region Relacionamento
             public virtual List<Contratos> Contratos { get; set; }
+             
+            public virtual List<ImovelLocador> ImovelLocador { get; set; }
         #endregion
     }
 }

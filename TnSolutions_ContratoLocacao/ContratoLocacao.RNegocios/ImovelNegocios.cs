@@ -27,7 +27,7 @@ namespace ContratoLocacao.RNegocios
                     I.Ativo = true;
                     I.DataInclusao = DateTime.Now;
                     I.DataAlteracao = null;
-
+                    
                     ir.Insert(I);
                     return I;
                 }

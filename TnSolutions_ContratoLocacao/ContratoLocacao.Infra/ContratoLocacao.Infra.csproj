@@ -55,6 +55,7 @@
     <Compile Include="Mapeamento\ContratosMapeamento.cs" />
     <Compile Include="Mapeamento\FiadorContratoMapeamento.cs" />
     <Compile Include="Mapeamento\FiadorMapeamento.cs" />
+    <Compile Include="Mapeamento\ImovelLocadorMapeamento.cs" />
     <Compile Include="Mapeamento\ImovelMapeamento.cs" />
     <Compile Include="Mapeamento\LocadorMapeamento.cs" />
     <Compile Include="Mapeamento\LocatarioContratoMapeamento.cs" />

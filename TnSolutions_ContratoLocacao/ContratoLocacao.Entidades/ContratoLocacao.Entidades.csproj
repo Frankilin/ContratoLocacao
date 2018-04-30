@@ -44,6 +44,7 @@
     <Compile Include="Contratos.cs" />
     <Compile Include="FiadorContrato.cs" />
     <Compile Include="Imovel.cs" />
+    <Compile Include="ImovelLocador.cs" />
     <Compile Include="Locador.cs" />
     <Compile Include="Locatario.cs" />
     <Compile Include="LocatarioContrato.cs" />

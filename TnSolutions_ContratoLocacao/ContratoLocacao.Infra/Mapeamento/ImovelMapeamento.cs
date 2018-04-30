@@ -61,12 +61,23 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(i => i.DataAlteracao)
                 .IsOptional();
 
+            Property(i => i.IdLocador)
+                .IsOptional();
+
             //Property(i => i.IdContrato)
             //    .IsRequired();
 
             //HasRequired(i => i.Contrato)
             //    .WithMany(x => x.Imovel)
             //    .HasForeignKey(c => c.IdContrato);
+
+
+
+            //#region Relacionamento
+            //    HasRequired(i => i.ImovelLocador)
+            //        .WithMany(il => il.Imovel)
+            //        .HasForeignKey(i => i.IdImovel);
+            //#endregion
 
         }
     }

@@ -19,7 +19,8 @@ namespace ContratoLocacao.Entidades
         public int TipoGarantia { get; set; }//Fiador/Calção/Seguro de fiança locativa.
 
         #region Relacionamento
-        public virtual List<FiadorContrato> FiadorContrato { get; set; }
+            public virtual List<FiadorContrato> FiadorContrato { get; set; }
+            public virtual List<LocatarioContrato> LocatarioContrato { get; set; }
         #endregion
     }
 }

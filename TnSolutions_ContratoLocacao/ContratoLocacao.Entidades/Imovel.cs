@@ -17,6 +17,7 @@ namespace ContratoLocacao.Entidades
         public string Estado { get; set; }
         public string Cidade { get; set; }
         public string Cep { get; set; }
+        public int IdLocador { get; set; }
 
         public DateTime DataInclusao { get; set; }
         public Nullable<DateTime> DataAlteracao { get; set; }
@@ -25,9 +26,10 @@ namespace ContratoLocacao.Entidades
         // public string FimQueSeDestina { get; set; }//Ex: Residência, Veraneio
         public Boolean Ativo { get; set; }
 
-        //public int IdContrato { get; set; }
         #region Relacionamento
-        public virtual List<Contratos> Contrato { get; set; }
+            public virtual List<Contratos> Contrato { get; set; }
+            public virtual Locador Locador { get; set; }
+            public virtual List<ImovelLocador> ImovelLocador { get; set; }
         #endregion
     }
 }

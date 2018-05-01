@@ -60,8 +60,10 @@
     <Compile Include="Mapeamento\LocadorMapeamento.cs" />
     <Compile Include="Mapeamento\LocatarioContratoMapeamento.cs" />
     <Compile Include="Mapeamento\LocatarioMapeamento.cs" />
+    <Compile Include="Mapeamento\TipoGarantiaMapeamento.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistencia\ImovelRepositorio.cs" />
+    <Compile Include="Persistencia\LocatarioRepositorio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

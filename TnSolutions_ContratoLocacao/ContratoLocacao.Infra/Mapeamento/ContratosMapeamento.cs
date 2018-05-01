@@ -53,18 +53,25 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(c => c.IdImovel)
                 .IsRequired();
 
+
+            Property(c => c.IdTipoGarantia)
+                .IsRequired();
+
             #region Relacionamentos
+                //Locador
+                HasRequired(c => c.Locador)
+                    .WithMany(l => l.Contratos)
+                    .HasForeignKey(c => c.IdLocador);
 
-            //Locador
-            HasRequired(c => c.Locador)
-                .WithMany(l => l.Contratos)
-                .HasForeignKey(c => c.IdLocador);
-
-            //Imovel
-            HasRequired(c => c.Imovel)
-                .WithMany(i => i.Contrato)
-                .HasForeignKey(i => i.IdImovel);
-
+                //Imovel
+                HasRequired(c => c.Imovel)
+                    .WithMany(i => i.Contrato)
+                    .HasForeignKey(i => i.IdImovel);
+            
+                //Tipo Garantia
+                HasRequired(c => c.TipoGarantia)
+                    .WithMany(tg => tg.Contrato)
+                    .HasForeignKey(c => c.IdTipoGarantia);
             #endregion
 
         }

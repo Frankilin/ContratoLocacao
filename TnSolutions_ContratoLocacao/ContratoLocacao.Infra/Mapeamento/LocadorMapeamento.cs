@@ -50,11 +50,6 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(l => l.Padrao)
                 .IsRequired();
 
-            //#region Relacionamento
-            //    HasRequired(l => l.ImovelLocador)
-            //       .WithMany(il => il.Locador)
-            //       .HasForeignKey(i => i.IdLocador);
-            //#endregion
         }
     }
 }

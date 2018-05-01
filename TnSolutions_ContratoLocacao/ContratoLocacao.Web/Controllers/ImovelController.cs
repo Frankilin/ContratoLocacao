@@ -48,9 +48,7 @@ namespace ContratoLocacao.Web.Controllers
                     i.Estado        = modelo.Estado;
                     i.Cidade        = modelo.Cidade;
                     i.Cep           = modelo.Cep;
-                    //i.Ativo         = modelo.Ativo;
-
-
+                   
                     ImovelNegocios imn = new ImovelNegocios();
                     i = imn.NovoImovel(i);
 

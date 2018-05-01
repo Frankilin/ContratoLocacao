@@ -18,6 +18,7 @@ namespace ContratoLocacao.Entidades
         public DateTime DataInicio { get; set; }
         public DateTime DataFim { get; set; }
         public string ReajusteACada { get; set; }
+        public int IdTipoGarantia { get; set; }//Fiador/Calção/Seguro de fiança locativa.
 
         public int IdLocador { get; set; }//Relacionamento com Locador
         
@@ -30,6 +31,7 @@ namespace ContratoLocacao.Entidades
             public virtual List<FiadorContrato> FiadorContrato { get; set; }
             public virtual Locador Locador { get; set; }
             public virtual Imovel Imovel { get; set; }
+            public virtual TipoGarantia TipoGarantia { get; set; }
         #endregion
     }
 }

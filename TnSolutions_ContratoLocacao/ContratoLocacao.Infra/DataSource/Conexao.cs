@@ -35,6 +35,7 @@ namespace ContratoLocacao.Infra.DataSource
             modelBuilder.Configurations.Add(new LocatarioContratoMapeamento());
             modelBuilder.Configurations.Add(new LocatarioMapeamento());
             modelBuilder.Configurations.Add(new ImovelLocadorMapeamento());
+            modelBuilder.Configurations.Add(new TipoGarantiaMapeamento());
         }
 
         public DbSet<Contratos> Contratos { get; set; }
@@ -45,5 +46,6 @@ namespace ContratoLocacao.Infra.DataSource
         public DbSet<Locatario> Locatario { get; set; }
         public DbSet<LocatarioContrato> LocatarioContrato { get; set; }
         public DbSet<ImovelLocador> ImovelLocador { get; set; }
+        public DbSet<TipoGarantia> TipoGarantia { get; set; }
     }
 }

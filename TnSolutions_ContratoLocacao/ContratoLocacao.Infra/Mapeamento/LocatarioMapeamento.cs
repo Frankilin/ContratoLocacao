@@ -31,7 +31,8 @@ namespace ContratoLocacao.Infra.Mapeamento
                 .HasMaxLength(14);
 
             Property(l => l.CNPJLocatario)
-                .HasMaxLength(18);
+                .HasMaxLength(18)
+                .IsOptional();
 
             Property(l => l.CelularLocatario)
                 .IsRequired()
@@ -40,10 +41,16 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(l => l.Ativo)
                 .IsRequired();
 
-            Property(l => l.TipoGarantia)
+            Property(l => l.EmailLocatario)
+                .IsOptional()
+                .HasMaxLength(50);
+
+            Property(l => l.DataInclusao)
                 .IsRequired();
 
-           
+            Property(l => l.DataAlteracao)
+                .IsOptional();
+
         }
 
     }

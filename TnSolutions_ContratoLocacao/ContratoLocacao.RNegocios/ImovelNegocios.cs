@@ -37,6 +37,9 @@ namespace ContratoLocacao.RNegocios
 
                 throw e;
             }
+
+
+
         }
     }
 }

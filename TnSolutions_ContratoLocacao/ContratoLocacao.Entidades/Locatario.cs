@@ -16,7 +16,11 @@ namespace ContratoLocacao.Entidades
         public string EnderecoLocatario { get; set; }
         public string CelularLocatario { get; set; }
         public Boolean Ativo { get; set; }
-        public int TipoGarantia { get; set; }//Fiador/Calção/Seguro de fiança locativa.
+        public string EmailLocatario { get; set; }
+        
+        public DateTime DataInclusao { get; set; }
+        public Nullable<DateTime>DataAlteracao { get; set; }
+        
 
         #region Relacionamento
             public virtual List<FiadorContrato> FiadorContrato { get; set; }

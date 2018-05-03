@@ -16,12 +16,16 @@ namespace ContratoLocacao.Entidades
         public string EnderecoLocador { get; set; }
         public string TelFixoLocador { get; set; }
         public string CelularLocador { get; set; }
-        public string Padrao { get; set; }//Se for Padrão, ele sempre pega ele.
-        
+        public Boolean Padrao { get; set; }//Se for Padrão, ele sempre pega ele.
+        public Boolean Ativo { get; set; }
+
+        public DateTime DataInclusao { get; set; }
+        public Nullable<DateTime> DataAlteracao { get; set; }
+
         //public int IdLocadorContrato { get; set; }
 
         #region Relacionamento
-            public virtual List<Contratos> Contratos { get; set; }
+        public virtual List<Contratos> Contratos { get; set; }
              
             public virtual List<ImovelLocador> ImovelLocador { get; set; }
         #endregion

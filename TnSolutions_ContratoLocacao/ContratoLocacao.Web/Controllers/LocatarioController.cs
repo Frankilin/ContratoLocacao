@@ -44,7 +44,7 @@ namespace ContratoLocacao.Web.Controllers
                     l.NomeLocatario = modelo.NomeLocatario;
                     l.RgLocatario = modelo.RgLocatario;
                     l.CPFLocatario = modelo.CPFLocatario;
-                    l.CNPJLocatario = modelo.CNPJLocatario;
+                    l.CNPJLocatario =  modelo.CNPJLocatario;
                     l.EnderecoLocatario = modelo.EnderecoLocatario;
                     l.CelularLocatario = modelo.CelularLocatario;
                     l.EmailLocatario = modelo.EmailLocatario;

@@ -9,3 +9,5 @@ C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\Cont
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\obj\Debug\ContratoLocacao.RNegocios.csprojResolveAssemblyReference.cache
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\obj\Debug\ContratoLocacao.RNegocios.dll
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\obj\Debug\ContratoLocacao.RNegocios.pdb
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\System.Web.Mvc.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.RNegocios\bin\Debug\System.Web.Mvc.xml

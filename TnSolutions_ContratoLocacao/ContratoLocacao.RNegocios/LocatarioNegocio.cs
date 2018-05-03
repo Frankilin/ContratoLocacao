@@ -33,7 +33,6 @@ namespace ContratoLocacao.RNegocios
             }
             catch (Exception e)
             {
-
                 throw e;
             }
         }

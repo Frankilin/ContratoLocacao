@@ -50,6 +50,15 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(l => l.Padrao)
                 .IsRequired();
 
+            Property(l => l.DataInclusao)
+                .IsRequired();
+
+            Property(l => l.DataAlteracao)
+                .IsOptional();
+
+            Property(l => l.Ativo)
+                .IsRequired();
+
         }
     }
 }

@@ -3,5 +3,3 @@ C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\Cont
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades\obj\Debug\ContratoLocacao.Entidades.csprojResolveAssemblyReference.cache
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades\obj\Debug\ContratoLocacao.Entidades.dll
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades\obj\Debug\ContratoLocacao.Entidades.pdb
-C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades\bin\Debug\System.Web.Mvc.dll
-C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades\bin\Debug\System.Web.Mvc.xml

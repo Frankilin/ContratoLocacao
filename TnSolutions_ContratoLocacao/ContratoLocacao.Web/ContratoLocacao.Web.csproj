@@ -167,7 +167,6 @@
     <Content Include="Content\bootstrap-reboot.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <Fakes Include="Fakes\System.Web.Mvc.fakes" />
     <None Include="scripts\jquery-1.10.2-vsdoc.js" />
     <Content Include="scripts\jquery-1.10.2.js" />
     <Content Include="scripts\jquery-1.10.2.min.js" />
@@ -199,6 +198,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImovelController.cs" />
+    <Compile Include="Controllers\LocadorController.cs" />
     <Compile Include="Controllers\LocatarioController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -228,6 +228,7 @@
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Imovel\NovoImovel.cshtml" />
     <Content Include="Views\Locatario\NovoLocatario.cshtml" />
+    <Content Include="Views\Locador\NovoLocador.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

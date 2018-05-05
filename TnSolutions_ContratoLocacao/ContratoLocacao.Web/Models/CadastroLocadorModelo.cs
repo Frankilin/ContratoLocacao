@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.Web.Mvc;
 
 namespace ContratoLocacao.Web.Models
 {
@@ -23,10 +24,10 @@ namespace ContratoLocacao.Web.Models
         [Display(Name = "CPF")]
         public string CPFLocador { get; set; }
 
-        //CNPJ
-        [Required(ErrorMessage = "Informe o CNPJ do Locador")]
-        [Display(Name = "CNPJ")]
-        public string CNPJLocador { get; set; }
+        ////CNPJ
+        //[Required(ErrorMessage = "Informe o CNPJ do Locador")]
+        //[Display(Name = "CNPJ")]
+        //public string CNPJLocador { get; set; }
 
         //Endereço
         [Required(ErrorMessage = "Informe o Endereço do Locador")]
@@ -43,5 +44,11 @@ namespace ContratoLocacao.Web.Models
         [Display(Name = "Celular")]
         [DataType(DataType.PhoneNumber)]
         public string CelularLocador { get; set; }
+
+        //Imovel
+        [Required(ErrorMessage = "Informe o imóvel que pertence ao locador.")]
+        [Display(Name = "Imóvel")]
+        public int ImovelSelecionado { get; set; }
+        public SelectList Imovel { get; set; }
     }
 }

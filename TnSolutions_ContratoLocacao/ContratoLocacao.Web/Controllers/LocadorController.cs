@@ -49,7 +49,7 @@ namespace ContratoLocacao.Web.Controllers
                     ld.CelularLocador = modelo.CelularLocador;
 
                     //Recebendo o Id do imóvel através do modelo
-                    i.IdImovel = modelo.ImovelSelecionado;
+                    i.IdImovel = modelo.IdImovel;
 
                     ImovelNegocios ing = new ImovelNegocios();
                     i = ing.NovoImovel(i);

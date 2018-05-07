@@ -48,7 +48,7 @@ namespace ContratoLocacao.Web.Models
         //Imovel
         [Required(ErrorMessage = "Informe o imóvel que pertence ao locador.")]
         [Display(Name = "Imóvel")]
-        public int ImovelSelecionado { get; set; }
-        public SelectList Imovel { get; set; }
+        public int IdImovel { get; set; }
+        public SelectList ImovelSelecionado { get; set; }
     }
 }

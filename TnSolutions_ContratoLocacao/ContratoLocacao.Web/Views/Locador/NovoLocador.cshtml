@@ -99,8 +99,8 @@
         <div class="form-group">
                 @Html.LabelFor(model => model.IdImovel, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
-                    @*@Html.EditorFor(model => model.IdImovel, new { htmlAttributes = new { @class = "form-control" } })*@
-                    @Html.DropDownListFor(model => model.IdImovel, Model.ImovelSelecionado, "Value", "Text")
+                    @*@Html.DropDownListFor(model => model.IdImovel, Model.ImovelSelecionado, "Selecione uma opção", "Text")*@
+                    @Html.DropDownListFor(model => model.IdImovel, new MultiSelectList(Model.ImovelSelecionado, "Value", "Text"),  new { multiple = "multiple" })
                     @Html.ValidationMessageFor(model => model.IdImovel, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -116,15 +116,16 @@
 }
 
             <div>
-                @Html.ActionLink("Back to List", "Index")
+                @Html.ActionLink("Voltar", "Index", "Home")
             </div>
 
 
 
 
 @*@section stripts{
-
-    <stript>
-        $("ListaTodosImoveisDropDownList")
-    </stript>
+<stript>
+    $(function() {
+        $("ListaTodosImoveisDropDownList").chosen();         
+    })
+</stript>
 }*@

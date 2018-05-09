@@ -16,9 +16,11 @@ namespace ContratoLocacao.Web.Controllers
         {
             try
             {
-                LocadorNegocio ln = new LocadorNegocio();
+                ImovelNegocios ing = new ImovelNegocios();
                 var modelo = new CadastroLocadorModelo();
 
+                modelo.ImovelSelecionado = ing.ListaTodosImoveisDropDownList();
+                
                 return View(modelo);
 
             }

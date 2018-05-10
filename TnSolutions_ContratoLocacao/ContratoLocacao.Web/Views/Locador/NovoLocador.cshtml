@@ -2,7 +2,9 @@
 
 @{
     ViewBag.Title = "NovoLocador";
+    //Layout = "~/Views/Shared/_layout.cshtml";
 }
+
 
 <h2>Cadastro Locador</h2>
 
@@ -100,7 +102,7 @@
                 @Html.LabelFor(model => model.IdImovel, htmlAttributes: new { @class = "control-label col-md-2" })
                 <div class="col-md-10">
                     @*@Html.DropDownListFor(model => model.IdImovel, Model.ImovelSelecionado, "Selecione uma opção", "Text")*@
-                    @Html.DropDownListFor(model => model.IdImovel, new MultiSelectList(Model.ImovelSelecionado, "Value", "Text"),  new { multiple = "multiple" })
+                    @Html.DropDownListFor(model => model.IdImovel, new MultiSelectList(Model.ImovelSelecionado, "Value", "Text"),  new { multiple = "multiple", @class= "form-control", id = "ListaImoveis"  } )
                     @Html.ValidationMessageFor(model => model.IdImovel, "", new { @class = "text-danger" })
                 </div>
             </div>
@@ -112,6 +114,8 @@
         </div>
 
    </div>
+   
+
 
 }
 
@@ -120,12 +124,10 @@
             </div>
 
 
-
-
-@*@section stripts{
-<stript>
-    $(function() {
-        $("ListaTodosImoveisDropDownList").chosen();         
-    })
-</stript>
-}*@
+@section stripts{
+    <script type="text/javascript">
+        $(function (){
+            $("#ListaImoveis").chosen();
+           });
+    </script>
+}

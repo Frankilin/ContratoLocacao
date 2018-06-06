@@ -31,6 +31,9 @@ namespace ContratoLocacao.Web.Models
         public int IdImovel { get; set; }
         public SelectList ImovelSelecionado { get; set; }
 
+        
+        /* DADOS DO CONTRATO*/
+
         //Valor
         [Required(ErrorMessage = "Informe o valor da locação.")]
         [Display(Name = "Valor da Locação")]
@@ -39,18 +42,18 @@ namespace ContratoLocacao.Web.Models
         //Pagamento
         [Required(ErrorMessage = "Informe o dia do pagamento")]
         [Display(Name = "Pagamento")]
-        public int DiaPagamento { get; set; }
+        public string DiaPagamento { get; set; }
 
         //Prazo Locação
         [Required(ErrorMessage = "Informe o prazo de locação.")]
         [Display(Name = "Prazo de Locação")]
-        public int PrazoLocacao { get; set; }
+        public string PrazoLocacao { get; set; }
 
 
         //Reajuste
         [Required(ErrorMessage = "Informe se haverá reajuste.")]
         [Display(Name = "Reajuste a cada")]
-        public int ReajusteACada { get; set; }
+        public string ReajusteACada { get; set; }
 
 
         //Data Inicio

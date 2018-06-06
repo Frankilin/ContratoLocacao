@@ -10,3 +10,5 @@ C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\Cont
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Infra\obj\Debug\ContratoLocacao.Infra.csprojResolveAssemblyReference.cache
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Infra\obj\Debug\ContratoLocacao.Infra.dll
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Infra\obj\Debug\ContratoLocacao.Infra.pdb
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Infra\bin\Debug\ContratoLocacao.Entidades.Enum.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Infra\bin\Debug\ContratoLocacao.Entidades.Enum.pdb

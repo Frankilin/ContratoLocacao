@@ -12,7 +12,7 @@ namespace ContratoLocacao.Entidades
         public string Descricao { get; set; }
 
         #region Relacionamento
-            public virtual List<Contratos> Contrato { get; set; }
+            public virtual List<Contrato> Contrato { get; set; }
         #endregion
     }
 }

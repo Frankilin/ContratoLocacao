@@ -13,7 +13,7 @@ namespace ContratoLocacao.Entidades
         public int IdContrato { get; set; }//Chave estrangeira do contrato
         
         #region Relacionamentos
-        public virtual Contratos Contratos { get; set; }
+        public virtual Contrato Contratos { get; set; }
         public virtual Locatario Locatario { get; set; }
         #endregion
     }

@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoLocacao.Infra", "Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoLocacao.RNegocios", "ContratoLocacao.RNegocios\ContratoLocacao.RNegocios.csproj", "{9BE1A245-0685-4613-B621-1322D625F9D5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ContratoLocacao.Entidades.Enum", "ContratoLocacao.Entidades.Enum\ContratoLocacao.Entidades.Enum.csproj", "{C2DF70E0-6149-4120-A72A-4CCA3272D728}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{9BE1A245-0685-4613-B621-1322D625F9D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BE1A245-0685-4613-B621-1322D625F9D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BE1A245-0685-4613-B621-1322D625F9D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2DF70E0-6149-4120-A72A-4CCA3272D728}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2DF70E0-6149-4120-A72A-4CCA3272D728}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2DF70E0-6149-4120-A72A-4CCA3272D728}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2DF70E0-6149-4120-A72A-4CCA3272D728}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,5 +58,6 @@ Global
 		{A02F72D6-965E-4308-B2DA-EFC0F689292D} = {AA7A25A6-8EB8-4DCD-9330-F5F067EBE4D8}
 		{07B936A2-47E5-4456-8229-242E9370CD01} = {0BC9C681-6F0B-4741-A281-978F6A95BDC6}
 		{9BE1A245-0685-4613-B621-1322D625F9D5} = {8DB43E4C-7495-4B28-99CC-644FEA2EB172}
+		{C2DF70E0-6149-4120-A72A-4CCA3272D728} = {2184ED8B-8174-4957-B690-FA27755CD59D}
 	EndGlobalSection
 EndGlobal

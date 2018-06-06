@@ -61,8 +61,8 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(i => i.DataAlteracao)
                 .IsOptional();
 
-            Property(i => i.IdLocador)
-                .IsOptional();
+            //Property(i => i.IdLocador)
+            //    .IsOptional();
 
             //Property(i => i.IdContrato)
             //    .IsRequired();

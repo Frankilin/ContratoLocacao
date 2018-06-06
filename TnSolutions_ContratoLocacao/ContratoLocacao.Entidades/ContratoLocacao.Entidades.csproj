@@ -42,7 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Fiador.cs" />
-    <Compile Include="Contratos.cs" />
+    <Compile Include="Contrato.cs" />
     <Compile Include="FiadorContrato.cs" />
     <Compile Include="Imovel.cs" />
     <Compile Include="ImovelLocador.cs" />
@@ -54,6 +54,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ContratoLocacao.Entidades.Enum\ContratoLocacao.Entidades.Enum.csproj">
+      <Project>{c2df70e0-6149-4120-a72a-4cca3272d728}</Project>
+      <Name>ContratoLocacao.Entidades.Enum</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

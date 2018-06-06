@@ -41,26 +41,25 @@ namespace ContratoLocacao.Web.Controllers
                 if(ModelState.IsValid)
                 {
                     Locador ld = new Locador();
-                    Imovel i = new Imovel();
-
+                    
                     ld.NomeLocador = modelo.NomeLocador;
                     ld.RgLocador = modelo.RgLocador;
                     ld.CPFLocador = modelo.CPFLocador;
                     ld.EnderecoLocador = modelo.EnderecoLocador;
                     ld.TelFixoLocador = modelo.TelFixoLocador;
                     ld.CelularLocador = modelo.CelularLocador;
-
-                    //Recebendo o Id do imóvel através do modelo
-                    i.IdImovel = modelo.IdImovel;
-
-                    ImovelNegocios ing = new ImovelNegocios();
-                    i = ing.NovoImovel(i);
-                    i.IdLocador = ld.IdLocador;
                     
-                    LocadorNegocio ln = new LocadorNegocio();
-                    ld = ln.NovoLocador(ld);
+                    //Passando os parametros para ImovelLocador
+                    ImovelLocador il = new ImovelLocador();
+                    il.IdImovel = modelo.IdImovel;
+                    il.IdLocador = 4; // criar um campo Hiden no modelo e resgatar o ID através dele.
 
-                    TempData["Mensagem"] = "Imóvel cadastrado com sucesso!";
+                    LocadorNegocio ln = new LocadorNegocio();
+                    ImovelLocadorNegocio iln = new ImovelLocadorNegocio();
+                    ld = ln.NovoLocador(ld);
+                    il = iln.NovoImovelLocador(il);
+
+                    TempData["Mensagem"] = "Locador cadastrado com sucesso!";
                     TempData["Resposta"] = "Sucesso";
                 }
             }

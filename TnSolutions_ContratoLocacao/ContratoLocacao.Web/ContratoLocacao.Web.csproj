@@ -142,6 +142,7 @@
     <Content Include="Content\Chosen\chosen.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <Content Include="Imagens\LOGO-TNSOLUTIONS.png" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="scripts\bootstrap.bundle.js" />
@@ -196,6 +197,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\ContratoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImovelController.cs" />
     <Compile Include="Controllers\LocadorController.cs" />
@@ -206,6 +208,7 @@
     <Compile Include="Models\CadastroImovelModelo.cs" />
     <Compile Include="Models\CadastroLocadorModelo.cs" />
     <Compile Include="Models\CadastroLocatarioModelo.cs" />
+    <Compile Include="Models\InclusaoContratoModelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -238,8 +241,13 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Contrato\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\ContratoLocacao.Entidades.Enum\ContratoLocacao.Entidades.Enum.csproj">
+      <Project>{c2df70e0-6149-4120-a72a-4cca3272d728}</Project>
+      <Name>ContratoLocacao.Entidades.Enum</Name>
+    </ProjectReference>
     <ProjectReference Include="..\ContratoLocacao.Entidades\ContratoLocacao.Entidades.csproj">
       <Project>{fcbd02e1-8ce9-435a-aa99-d45a6aa59b0f}</Project>
       <Name>ContratoLocacao.Entidades</Name>

@@ -10,7 +10,7 @@ using System.Data.Entity.ModelConfiguration;
 
 namespace ContratoLocacao.Infra.Mapeamento
 {
-    class ContratosMapeamento : EntityTypeConfiguration<Contratos>
+    class ContratosMapeamento : EntityTypeConfiguration<Contrato>
     {
         public ContratosMapeamento()
         {

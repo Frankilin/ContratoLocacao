@@ -38,7 +38,7 @@ namespace ContratoLocacao.Infra.DataSource
             modelBuilder.Configurations.Add(new TipoGarantiaMapeamento());
         }
 
-        public DbSet<Contratos> Contratos { get; set; }
+        public DbSet<Contrato> Contratos { get; set; }
         public DbSet<Fiador> Fiador { get; set; }
         public DbSet<FiadorContrato> FiadorContrato { get; set; }
         public DbSet<Imovel> Imovel { get; set; }

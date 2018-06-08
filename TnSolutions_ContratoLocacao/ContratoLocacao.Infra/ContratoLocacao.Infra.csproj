@@ -63,6 +63,7 @@
     <Compile Include="Mapeamento\TipoGarantiaMapeamento.cs" />
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Persistencia\ContratoRepositorio.cs" />
+    <Compile Include="Persistencia\FiadorRepositorio.cs" />
     <Compile Include="Persistencia\ImovelLocadorRepositorio.cs" />
     <Compile Include="Persistencia\ImovelRepositorio.cs" />
     <Compile Include="Persistencia\LocadorRepositorio.cs" />

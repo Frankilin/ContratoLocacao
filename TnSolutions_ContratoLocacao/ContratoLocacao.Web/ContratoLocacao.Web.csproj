@@ -198,6 +198,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ContratoController.cs" />
+    <Compile Include="Controllers\FiadorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ImovelController.cs" />
     <Compile Include="Controllers\LocadorController.cs" />
@@ -205,6 +206,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\CadastroFiadorModelo.cs" />
     <Compile Include="Models\CadastroImovelModelo.cs" />
     <Compile Include="Models\CadastroLocadorModelo.cs" />
     <Compile Include="Models\CadastroLocatarioModelo.cs" />
@@ -232,6 +234,7 @@
     <Content Include="Views\Imovel\NovoImovel.cshtml" />
     <Content Include="Views\Locatario\NovoLocatario.cshtml" />
     <Content Include="Views\Locador\NovoLocador.cshtml" />
+    <Content Include="Views\Fiador\NovoFiador.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

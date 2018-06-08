@@ -26,7 +26,7 @@ namespace ContratoLocacao.Web.Models
         public SelectList FiadorSelecionado { get; set; }
         
         //Imovel
-        [Required(ErrorMessage = "Informe o imóvel que irá locar.")]
+        [Required(ErrorMessage = "Informe o imóvel que irá alugar.")]
         [Display(Name = "Imóvel")]
         public int IdImovel { get; set; }
         public SelectList ImovelSelecionado { get; set; }

@@ -37,7 +37,7 @@ namespace ContratoLocacao.RNegocios
             {
                 ContratoRepositorio cr = new ContratoRepositorio();
 
-                List<Contrato>c  = cr.Todos();
+                List<Contrato> c  = cr.Todos();
                 if (c == null)
                 {
                     throw new Exception("Nenhum contrato Selecionado");

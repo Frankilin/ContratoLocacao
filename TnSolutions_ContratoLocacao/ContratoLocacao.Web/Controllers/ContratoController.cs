@@ -17,12 +17,20 @@ namespace ContratoLocacao.Web.Controllers
         {
             try
             {
+                //Instanciando a camada de negócio para exibir os DropdownList
                 LocadorNegocio lng = new LocadorNegocio();
-                LocatarioNegocio lctn = new LocatarioNegocio(); 
+                LocatarioNegocio lctn = new LocatarioNegocio();
+                FiadorNegocio fn = new FiadorNegocio();
+                ImovelNegocios ine = new ImovelNegocios();
+
+                //Criando uma variavel que recebe o modelo
                 var modelo = new InclusaoContratoModelo();
 
+                //Exibição do DropDownList Na tela para o usuário
                 modelo.LocadorSelecionado = lng.ListaTodosLocadoresDropDownList();
                 modelo.LocatarioSelecionado = lctn.ListaTodosLocatariosDropDownList();
+                modelo.FiadorSelecionado = fn.ListaTodosFiadorDropDownList();
+                modelo.ImovelSelecionado = ine.ListaTodosImoveisDropDownList();
 
                 EnumFimQueSeDestina model = new EnumFimQueSeDestina();
                 modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();

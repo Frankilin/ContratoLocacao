@@ -10,22 +10,27 @@ namespace ContratoLocacao.Web.Models
 {
     public class InclusaoContratoModelo
     {
-        //Locador
+        //DropdownList Locador
         [Display(Name = "Locador")]
         public int IdLocador { get; set; }
         public SelectList LocadorSelecionado  { get; set; }
-        
-        //Locatário
+
+        //DropdownList Locatário
         [Display(Name = "Locatário")]
         public int IdLocatario { get; set; }
         public SelectList LocatarioSelecionado { get; set; }
-        
-        //Fiador
+
+        //DropdownList Fiador
         [Display(Name = "Fiador")]
         public int IdFiador { get; set; }
         public SelectList FiadorSelecionado { get; set; }
+
+        //DropdownList TipoGarantia
+        [Display(Name = "Garantia")]
+        public int IdTipoGarantia { get; set; }
+        public SelectList TipoGarantiaSelecionado { get; set; }
         
-        //Imovel
+        //DropdownList Imovel
         [Required(ErrorMessage = "Informe o imóvel que irá alugar.")]
         [Display(Name = "Imóvel")]
         public int IdImovel { get; set; }

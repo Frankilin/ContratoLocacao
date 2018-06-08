@@ -48,6 +48,7 @@
     <Compile Include="LocadorNegocio.cs" />
     <Compile Include="LocatarioNegocio.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TipoGarantiaNegocio.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ContratoLocacao.Entidades\ContratoLocacao.Entidades.csproj">

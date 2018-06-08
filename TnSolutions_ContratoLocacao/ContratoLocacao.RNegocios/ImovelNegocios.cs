@@ -15,7 +15,6 @@ namespace ContratoLocacao.RNegocios
         {
             try
             {
-
                 //Verifica se a descrição do Imóvel esta em branco
                 if (I.NomeImovel == null)
                 {

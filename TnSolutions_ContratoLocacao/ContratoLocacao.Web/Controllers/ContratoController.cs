@@ -22,6 +22,7 @@ namespace ContratoLocacao.Web.Controllers
                 LocatarioNegocio lctn = new LocatarioNegocio();
                 FiadorNegocio fn = new FiadorNegocio();
                 ImovelNegocios ine = new ImovelNegocios();
+                TipoGarantiaNegocio tgn = new TipoGarantiaNegocio();
 
                 //Criando uma variavel que recebe o modelo
                 var modelo = new InclusaoContratoModelo();
@@ -31,6 +32,8 @@ namespace ContratoLocacao.Web.Controllers
                 modelo.LocatarioSelecionado = lctn.ListaTodosLocatariosDropDownList();
                 modelo.FiadorSelecionado = fn.ListaTodosFiadorDropDownList();
                 modelo.ImovelSelecionado = ine.ListaTodosImoveisDropDownList();
+                modelo.TipoGarantiaSelecionado = tgn.ListaTiposGarantiaDropDownList();
+
 
                 EnumFimQueSeDestina model = new EnumFimQueSeDestina();
                 modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();

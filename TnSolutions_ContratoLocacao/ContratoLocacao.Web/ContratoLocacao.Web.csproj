@@ -235,6 +235,7 @@
     <Content Include="Views\Locatario\NovoLocatario.cshtml" />
     <Content Include="Views\Locador\NovoLocador.cshtml" />
     <Content Include="Views\Fiador\NovoFiador.cshtml" />
+    <Content Include="Views\Contrato\NovoContrato.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -244,7 +245,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Contrato\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ContratoLocacao.Entidades.Enum\ContratoLocacao.Entidades.Enum.csproj">

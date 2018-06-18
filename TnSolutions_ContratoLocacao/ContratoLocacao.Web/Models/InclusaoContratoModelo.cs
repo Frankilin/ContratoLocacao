@@ -20,15 +20,19 @@ namespace ContratoLocacao.Web.Models
         public int IdLocatario { get; set; }
         public SelectList LocatarioSelecionado { get; set; }
 
+        
+        //DropdownList TipoGarantia
+        [Display(Name = "Garantia")]
+        public int IdTipoGarantia { get; set; }
+        public SelectList TipoGarantiaSelecionado { get; set; }
+
+       
         //DropdownList Fiador
         [Display(Name = "Fiador")]
         public int IdFiador { get; set; }
         public SelectList FiadorSelecionado { get; set; }
 
-        //DropdownList TipoGarantia
-        [Display(Name = "Garantia")]
-        public int IdTipoGarantia { get; set; }
-        public SelectList TipoGarantiaSelecionado { get; set; }
+        
         
         //DropdownList Imovel
         [Required(ErrorMessage = "Informe o imóvel que irá alugar.")]
@@ -64,11 +68,13 @@ namespace ContratoLocacao.Web.Models
         //Data Inicio
         [Required(ErrorMessage = "Informe a data de inicio.")]
         [Display(Name = "Data Inicio")]
+        [DataType(DataType.Date, ErrorMessage = "Data em formato inválido")]
         public DateTime DataInicio { get; set; }
 
         //Data Fim
         [Required(ErrorMessage = "Informe a data Final.")]
         [Display(Name = "Data Final")]
+        [DataType(DataType.Date, ErrorMessage = "Data em formato inválido")]
         public DateTime DataFim { get; set; }
 
 

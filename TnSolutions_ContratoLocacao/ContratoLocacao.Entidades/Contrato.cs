@@ -22,7 +22,7 @@ namespace ContratoLocacao.Entidades
         public string ReajusteACada { get; set; }
         public int IdTipoGarantia { get; set; }//Fiador/Calção/Seguro de fiança locativa.
 
-        public InclusoNoContrato.tipoInclusoContrato  InclusoNoContrato { get; set; }
+        //public InclusoNoContrato.tipoInclusoContrato  InclusoNoContrato { get; set; }
         public FimQueSeDestina.FimQueSeDestinaImovel FimQueSeDestinaImovel { get; set; }
 
         public int IdLocador { get; set; }//Relacionamento com Locador

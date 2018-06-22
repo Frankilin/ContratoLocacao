@@ -50,7 +50,7 @@ namespace ContratoLocacao.Web.Models
 
         //Pagamento
         [Required(ErrorMessage = "Informe o dia do pagamento")]
-        [Display(Name = "Pagamento")]
+        [Display(Name = "Dia do Pagamento")]
         public string DiaPagamento { get; set; }
 
         //Prazo Locação
@@ -78,14 +78,20 @@ namespace ContratoLocacao.Web.Models
         public DateTime DataFim { get; set; }
 
 
-        public class EnumFimQueSeDestina
-        {
-            public FimQueSeDestina.FimQueSeDestinaImovel FimQueSeDestina { get; set; }
-            public bool IsSelected { get; set; }
-        }
+        //Other properties
+        [Range(1, int.MaxValue, ErrorMessage = "Selecione o registro")]
+        [Display(Name = "Utilização do Imóvel")]
+        public FimQueSeDestina.FimQueSeDestinaImovel UtilizacaoImovel { get; set; }
+
+        //public class EnumFimQueSeDestina
+        //{
+        //    public FimQueSeDestina.FimQueSeDestinaImovel FimQueSeDestina { get; set; }
+        //    public bool IsSelected { get; set; }
+        //}
 
 
-        //Fim que se destina
-        public List<EnumFimQueSeDestina> CheckBoxItems { get; set; }
+        ////Fim que se destina
+        //public List<EnumFimQueSeDestina> CheckBoxItems { get; set; }
+
     }   
 }

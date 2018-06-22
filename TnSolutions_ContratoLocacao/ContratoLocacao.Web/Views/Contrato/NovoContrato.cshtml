@@ -9,9 +9,9 @@
 @using (Html.BeginForm()) 
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-control">
-        
+
         <div class="table-active table-bordered">
             <h5>Dados do locador</h5>
         </div>
@@ -21,7 +21,7 @@
             @Html.LabelFor(model => model.IdLocador, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @*@Html.EditorFor(model => model.IdLocador, new { htmlAttributes = new { @class = "form-control" } })*@
-                @Html.DropDownListFor(model => model.IdLocador, new SelectList(Model.LocadorSelecionado, "Value", "Text"), new { @class = "form-control", id = "ListaLocador", })
+                @Html.DropDownListFor(model => model.IdLocador, new SelectList(Model.LocadorSelecionado, "Value", "Text"), "Selecione o locador", new { @class = "form-control", id = "ListaLocador", })
                 @Html.ValidationMessageFor(model => model.IdLocador, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -34,7 +34,7 @@
             @Html.LabelFor(model => model.IdLocatario, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-4">
                 @*@Html.EditorFor(model => model.IdLocatario, new { htmlAttributes = new { @class = "form-control" } })*@
-                @Html.DropDownListFor(model => model.IdLocatario, new SelectList(Model.LocatarioSelecionado, "Value", "Text"), new { @class = "form-control", id = "ListaLocatario", })
+                @Html.DropDownListFor(model => model.IdLocatario, new SelectList(Model.LocatarioSelecionado, "Value", "Text"),"Selecione o locatário", new { @class = "form-control", id = "ListaLocatario", })
                 @Html.ValidationMessageFor(model => model.IdLocatario, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -43,7 +43,7 @@
             @Html.LabelFor(model => model.IdTipoGarantia, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @*@Html.EditorFor(model => model.IdTipoGarantia, new { htmlAttributes = new { @class = "form-control" } })*@
-                @Html.DropDownListFor(model => model.IdTipoGarantia, new SelectList(Model.TipoGarantiaSelecionado, "Value", "Text"), new { @class = "form-control", id = "ListaTipoGarantia" })
+                @Html.DropDownListFor(model => model.IdTipoGarantia, new SelectList(Model.TipoGarantiaSelecionado, "Value", "Text"), "Selecione o tipo", new { @class = "form-control", id = "ListaTipoGarantia" })
                 @Html.ValidationMessageFor(model => model.IdTipoGarantia, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -55,7 +55,7 @@
             @Html.LabelFor(model => model.IdFiador, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @*@Html.EditorFor(model => model.IdFiador, new { htmlAttributes = new { @class = "form-control" } })*@
-                @Html.DropDownListFor(model => model.IdFiador, new SelectList(Model.FiadorSelecionado, "Value", "Text"), new { @class = "form-control", id = "ListaFiador", })
+                @Html.DropDownListFor(model => model.IdFiador, new SelectList(Model.FiadorSelecionado, "Value", "Text"), "Selecione o Fiador", new { @class = "form-control", id = "ListaFiador", })
                 @Html.ValidationMessageFor(model => model.IdFiador, "", new { @class = "text-danger" })
             </div>
         </div>
@@ -68,70 +68,109 @@
         <div class="form-group">
             @Html.LabelFor(model => model.IdImovel, htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
-                @Html.DropDownListFor(model => model.IdImovel, new SelectList(Model.ImovelSelecionado, "Value", "Text"), new { @class = "form-control", id = "ListaImoveis", })
+                @Html.DropDownListFor(model => model.IdImovel, new SelectList(Model.ImovelSelecionado, "Value", "Text"), "Selecione o Imóvel", new { @class = "form-control", id = "ListaImoveis", })
                 @*@Html.EditorFor(model => model.IdImovel, new { htmlAttributes = new { @class = "form-control" } })*@
                 @Html.ValidationMessageFor(model => model.IdImovel, "", new { @class = "text-danger" })
             </div>
         </div>
 
+
         <div class="form-group">
             @Html.LabelFor(model => model.ValorLocacao, htmlAttributes: new { @class = "control-label col-md-2" })
-            <div class="col-md-10">
+            <div class="input-group mb-10">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">R$</span>
+                </div>
                 @Html.EditorFor(model => model.ValorLocacao, new { htmlAttributes = new { @class = "form-control" } })
                 @Html.ValidationMessageFor(model => model.ValorLocacao, "", new { @class = "text-danger" })
             </div>
-         </div>
+        </div>  
+
+
+            <div class="form-group">
+                @Html.LabelFor(model => model.UtilizacaoImovel, htmlAttributes: new { @class = "control-label col-md-2" })
+                <div class="col-md-10">
+                    @Html.EnumDropDownListFor(model => Model.UtilizacaoImovel, "Selecione uma opção", new { @class = "form-control" })
+                    @Html.ValidationMessageFor(model => model.UtilizacaoImovel, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            @*<div class="form-group">
+                <div class="col-md-10">
+                    @for (int i = 0; i < Model.CheckBoxItems.Count; i++)
+                    {
+                        @Html.LabelFor(model => Model.CheckBoxItems[i].FimQueSeDestina);
+                        @Html.CheckBoxFor(model => Model.CheckBoxItems[i].IsSelected);
+                        @Html.HiddenFor(model => Model.CheckBoxItems[i].FimQueSeDestina);
+                    }
+                </div>
+
+            </div>*@
+
+            @*<div class="form-group">
+                
+                <div class="col-md-10">
+                    
+                </div>
+            </div>*@
+
         <div class="form-group">
-            <div class="col-md-10">
-                @for (int i = 0; i < Model.CheckBoxItems.Count; i++)
-                {
-                    @Html.LabelFor(model => Model.CheckBoxItems[i].FimQueSeDestina);
-                    @Html.CheckBoxFor(model => Model.CheckBoxItems[i].IsSelected);
-                    @Html.HiddenFor(model => Model.CheckBoxItems[i].FimQueSeDestina);
-                }
+            @Html.LabelFor(model => model.DiaPagamento, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="input-group mb-10">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Dia</span>
+                </div>
+                @Html.EditorFor(model => model.DiaPagamento, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DiaPagamento, "", new { @class = "text-danger" })
             </div>
-        
-        </div>
+        </div> 
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.DiaPagamento, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.DiaPagamento, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.DiaPagamento, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.PrazoLocacao, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="input-group mb-10">
+                 @Html.EditorFor(model => model.PrazoLocacao, new { htmlAttributes = new { @class = "form-control" } })
+                 @Html.ValidationMessageFor(model => model.PrazoLocacao, "", new { @class = "text-danger" })
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Meses</span>
                 </div>
             </div>
+        </div> 
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.PrazoLocacao, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.PrazoLocacao, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.PrazoLocacao, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ReajusteACada, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="input-group mb-10">
+                @Html.EditorFor(model => model.ReajusteACada, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.ReajusteACada, "", new { @class = "text-danger" })
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Ano</span>
                 </div>
             </div>
+        </div> 
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.ReajusteACada, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.ReajusteACada, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.ReajusteACada, "", new { @class = "text-danger" })
+
+        <div class="card bg-primary mb-3" style="max-width: 60rem;">
+            <div class="card-header text-white">Período do contrato</div>
+            <div class="card-body bg-light">
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DataInicio, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DataInicio, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DataInicio, "", new { @class = "text-danger" })
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.DataFim, htmlAttributes: new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.DataFim, new { htmlAttributes = new { @class = "form-control" } })
+                        @Html.ValidationMessageFor(model => model.DataFim, "", new { @class = "text-danger" })
+                    </div>
                 </div>
             </div>
+        </div>  
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.DataInicio, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.DataInicio, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.DataInicio, "", new { @class = "text-danger" })
-                </div>
-            </div>
 
-            <div class="form-group">
-                @Html.LabelFor(model => model.DataFim, htmlAttributes: new { @class = "control-label col-md-2" })
-                <div class="col-md-10">
-                    @Html.EditorFor(model => model.DataFim, new { htmlAttributes = new { @class = "form-control" } })
-                    @Html.ValidationMessageFor(model => model.DataFim, "", new { @class = "text-danger" })
-                </div>
-            </div>
 
             <div class="form-group">
                 <div class="col-md-offset-2 col-md-10">
@@ -139,19 +178,19 @@
                 </div>
             </div>
         </div>
-}
+            }
 
-<div>
-    @Html.ActionLink("Voltar", "Index", "Home")
-</div>
+            <div>
+                @Html.ActionLink("Voltar", "Index", "Home")
+            </div>
 
 
 
-@section stripts{
-    <script type="text/javascript">
-        $(function (){
-            $("#ListaTipoGarantia").chosen();
-            //HTMLInputElement.prototype.height(50);
-           });
-    </script>
-}
+            @section stripts{
+                <script type="text/javascript">
+                    $(function () {
+                        $("#ListaTipoGarantia").chosen();
+                        //HTMLInputElement.prototype.height(50);
+                    });
+                </script>
+            }

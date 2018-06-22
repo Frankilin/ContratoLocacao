@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using ContratoLocacao.Entidades;
+using ContratoLocacao.Entidades.Enum;
 using ContratoLocacao.Web.Models;
 using ContratoLocacao.RNegocios;
 using static ContratoLocacao.Web.Models.InclusaoContratoModelo;
@@ -23,6 +24,8 @@ namespace ContratoLocacao.Web.Controllers
                 FiadorNegocio fn = new FiadorNegocio();
                 ImovelNegocios ine = new ImovelNegocios();
                 TipoGarantiaNegocio tgn = new TipoGarantiaNegocio();
+                FimQueSeDestina.FimQueSeDestinaImovel fdi = new FimQueSeDestina.FimQueSeDestinaImovel();
+
 
                 //Criando uma variavel que recebe o modelo
                 var modelo = new InclusaoContratoModelo();
@@ -33,13 +36,14 @@ namespace ContratoLocacao.Web.Controllers
                 modelo.FiadorSelecionado = fn.ListaTodosFiadorDropDownList();
                 modelo.ImovelSelecionado = ine.ListaTodosImoveisDropDownList();
                 modelo.TipoGarantiaSelecionado = tgn.ListaTiposGarantiaDropDownList();
+                //modelo.UtilizacaoImovel
 
 
-                EnumFimQueSeDestina model = new EnumFimQueSeDestina();
-                modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();
-                modelo.CheckBoxItems.Add(new EnumFimQueSeDestina() { FimQueSeDestina = Entidades.Enum.FimQueSeDestina.FimQueSeDestinaImovel.Comercial, IsSelected = false });
-                modelo.CheckBoxItems.Add(new EnumFimQueSeDestina() { FimQueSeDestina = Entidades.Enum.FimQueSeDestina.FimQueSeDestinaImovel.Residencia, IsSelected = false });
-                modelo.CheckBoxItems.Add(new EnumFimQueSeDestina() { FimQueSeDestina = Entidades.Enum.FimQueSeDestina.FimQueSeDestinaImovel.Veraneio, IsSelected = false });
+                //EnumFimQueSeDestina model = new EnumFimQueSeDestina();
+                //modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();
+                //modelo.CheckBoxItems.Add(new EnumFimQueSeDestina() { FimQueSeDestina = Entidades.Enum.FimQueSeDestina.FimQueSeDestinaImovel.Comercial, IsSelected = false });
+                //modelo.CheckBoxItems.Add(new EnumFimQueSeDestina() { FimQueSeDestina = Entidades.Enum.FimQueSeDestina.FimQueSeDestinaImovel.Residencia, IsSelected = false });
+                //modelo.CheckBoxItems.Add(new EnumFimQueSeDestina() { FimQueSeDestina = Entidades.Enum.FimQueSeDestina.FimQueSeDestinaImovel.Veraneio, IsSelected = false });
 
 
                 return View(modelo);
@@ -74,9 +78,9 @@ namespace ContratoLocacao.Web.Controllers
 
                     //Fim a que se destina o imóvel
 
-                    EnumFimQueSeDestina model = new EnumFimQueSeDestina();
-                    modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();
-                    c.FimQueSeDestinaImovel = model.FimQueSeDestina;
+                    //EnumFimQueSeDestina model = new EnumFimQueSeDestina();
+                    //modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();
+                    //c.FimQueSeDestinaImovel = model.;
 
                     //Gravando o valores DropDownList
 

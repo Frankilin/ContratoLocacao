@@ -10,9 +10,9 @@ namespace ContratoLocacao.Entidades.Enum
     {
         public enum FimQueSeDestinaImovel
         {
-            Veraneio,
-            Comercial, 
-            Residencia      
+            Veraneio = 1,
+            Comercial = 2 , 
+            Residencia = 3     
         }
     }
 }

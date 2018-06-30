@@ -12,6 +12,44 @@
 
     <div class="form-control">
 
+
+
+
+        @if (TempData["Mensagem"] != null)
+        {
+            if (TempData["Resposta"].ToString() == "Sucesso")
+            {
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card green lighten-1">
+                            <div class="card-content black-text">
+                                <span class="card-title">Mensagem</span>
+                                <p>
+                                    @TempData["Mensagem"].ToString()
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+            else if (TempData["Resposta"].ToString() == "Falha")
+            {
+                <div class="row">
+                    <div class="col s12 m6">
+                        <div class="card red lighten-1">
+                            <div class="card-content black-text">
+                                <span class="card-title">Mensagem</span>
+                                <p>
+                                    @TempData["Mensagem"].ToString()
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+
+
         <div class="table-active table-bordered">
             <h5>Dados do locador</h5>
         </div>

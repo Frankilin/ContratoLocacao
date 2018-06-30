@@ -8,6 +8,7 @@ using ContratoLocacao.Entidades.Enum;
 using ContratoLocacao.Web.Models;
 using ContratoLocacao.RNegocios;
 using static ContratoLocacao.Web.Models.InclusaoContratoModelo;
+using static ContratoLocacao.Entidades.Enum.FimQueSeDestina;
 
 namespace ContratoLocacao.Web.Controllers
 {
@@ -65,36 +66,68 @@ namespace ContratoLocacao.Web.Controllers
             {
                 if (ModelState.IsValid)
                 {
+                    
+                    //Instancia um novo contrato
                     Contrato c = new Contrato();
 
-                    //Vem do contrato 
-                    c.ValorIncluidoNoContrato = modelo.ValorLocacao.ToString();
+                    //Valor do contrato 
+                    c.ValorLocacao = modelo.ValorLocacao;
+                    
+                    //Data limite de pagamento 
                     c.DataLimitePagamento = modelo.DiaPagamento;
+                    
+                    //Prazo da locação
                     c.PrazoLocacao = modelo.PrazoLocacao;
-                    c.ReajusteACada = modelo.ReajusteACada;
+
+                    //Data inicio
                     c.DataInicio = modelo.DataInicio;
+
+                    //Data Fim
                     c.DataFim = modelo.DataFim;
 
+                    //Reajuste
+                    c.ReajusteACada = modelo.ReajusteACada;
+                     
+                    //Locador
+                    c.IdLocador = modelo.IdLocador;
+
+                    //Imóvel
+                    c.IdImovel = modelo.IdImovel;
+                    
+                    //Instanciando Tipo Garantia
+                    c.IdTipoGarantia = modelo.IdTipoGarantia;
 
                     //Fim a que se destina o imóvel
+                    c.FimQueSeDestinaImovel = modelo.UtilizacaoImovel;
+
+                    //Gravalção na tabela contrato
+                    ContratoNegocio cn = new ContratoNegocio();
+                    c = cn.NovoContrato(c);
+
+
+                    //Gravando na tabela Locatario contrato
+                    LocatarioContrato loc = new LocatarioContrato();
+                    LocatarioContratoNegocio lcn = new LocatarioContratoNegocio();
+                    loc.IdLocatario = modelo.IdLocatario;
+                    loc.IdContrato = c.IdContrato;
+                    loc = lcn.NovoLocatarioContrato(loc);
+
+                    //Gravando na tabela Fiador contrato
+                    FiadorContrato fc = new FiadorContrato();
+                    FiadorContratoNegocio fcn = new FiadorContratoNegocio();
+                    fc.IdFiador = modelo.IdFiador;
+                    fc.IdContrato = c.IdContrato;
+                    fc.IdLocatario = modelo.IdLocatario;
+                    fc = fcn.NovoFiadorContratoNegocio(fc);
+
 
                     //EnumFimQueSeDestina model = new EnumFimQueSeDestina();
                     //modelo.CheckBoxItems = new List<EnumFimQueSeDestina>();
                     //c.FimQueSeDestinaImovel = model.;
-
-                    //Gravando o valores DropDownList
-
-                    c.IdLocador = modelo.IdLocador;
-                    Locatario l = new Locatario();
-                    l.IdLocatario = modelo.IdLocatario;
-
-                    ContratoNegocio cn = new ContratoNegocio();
-                    c = cn.NovoContrato(c);
-
                     //LocatarioContratoNegocio lcn = new LocatarioContratoNegocio();
                     //l = lcn.NovoLocatario(l);
 
-                    TempData["Mensagem"] = "Locador cadastrado com sucesso!";
+                    TempData["Mensagem"] = "Contrato cadastrado com sucesso!";
                     TempData["Resposta"] = "Sucesso";
                 }
             }

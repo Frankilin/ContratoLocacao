@@ -46,7 +46,7 @@ namespace ContratoLocacao.Web.Models
         //Valor
         [Required(ErrorMessage = "Informe o valor da locação.")]
         [Display(Name = "Valor da Locação")]
-        public float ValorLocacao { get; set; }
+        public decimal ValorLocacao { get; set; }
 
         //Pagamento
         [Required(ErrorMessage = "Informe o dia do pagamento")]
@@ -82,6 +82,13 @@ namespace ContratoLocacao.Web.Models
         [Range(1, int.MaxValue, ErrorMessage = "Selecione o registro")]
         [Display(Name = "Utilização do Imóvel")]
         public FimQueSeDestina.FimQueSeDestinaImovel UtilizacaoImovel { get; set; }
+
+        public class EUtilizacaoImovel
+        {
+            public int Id { get; set; }
+            public FimQueSeDestina.FimQueSeDestinaImovel UtilizacaoImovel { get; set; }
+        }
+        
 
         //public class EnumFimQueSeDestina
         //{

@@ -11,25 +11,6 @@ namespace ContratoLocacao.Infra.Persistencia
 {
     public class LocatarioRepositorio : OperacoesGenericas<Locatario>
     {
-
-        public List<Locatario> Locatario(int IdLocatario)
-        {
-            using (Conexao cc = new Conexao())
-            {
-                return cc.Locatario
-                        .Where(l => l.IdLocatario == IdLocatario)
-                        .ToList();
-            }
-        }
-
-        public override List<Locatario> Todos()
-        {
-            using (Conexao cc = new Conexao())
-            {
-                return cc.Locatario
-                    .OrderBy(l => l.NomeLocatario)
-                    .ToList();
-            }
-        }
+  
     }
 }

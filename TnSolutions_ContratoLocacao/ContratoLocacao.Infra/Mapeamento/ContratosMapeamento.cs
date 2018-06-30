@@ -25,10 +25,6 @@ namespace ContratoLocacao.Infra.Mapeamento
             Property(c => c.DataCadastro)
                 .IsRequired();
 
-            Property(c => c.ValorIncluidoNoContrato)
-                .IsRequired()
-                .HasMaxLength(100);
-
             Property(c => c.DataLimitePagamento)
                 .IsRequired()
                 .HasMaxLength(2);

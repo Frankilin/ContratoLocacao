@@ -11,15 +11,21 @@ namespace ContratoLocacao.Entidades
     public class Contrato
     {
         public int IdContrato { get; set; }
-        public float ValorLocacao { get; set; }
+
+        public decimal ValorLocacao { get; set; }
+
         public DateTime DataCadastro { get; set; }
-        public string ValorIncluidoNoContrato { get; set; }
-        //public string tipoInclusoContrato { get; set; }//Ex: Incluso - Condominio, água, Luz
+
         public string DataLimitePagamento { get; set; }
+
         public string PrazoLocacao { get; set; }
+
         public DateTime DataInicio { get; set; }
+
         public DateTime DataFim { get; set; }
+
         public string ReajusteACada { get; set; }
+
         public int IdTipoGarantia { get; set; }//Fiador/Calção/Seguro de fiança locativa.
 
         //public InclusoNoContrato.tipoInclusoContrato  InclusoNoContrato { get; set; }

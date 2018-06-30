@@ -10,12 +10,9 @@ namespace ContratoLocacao.Entidades.Enum
     {
         public enum tipoInclusoContrato
         {
-            Agua, Luz, Condominio
+            Agua = 1,
+            Luz = 2,
+            Condominio = 3
         }
     }
-    //public class EnumModelo
-    //{
-    //    public Enum.InclusoNoContrato InclusoNoContrato { get; set; }
-    //    public bool IsSelected { get; set; }
-    //}
 }

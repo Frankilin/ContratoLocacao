@@ -1,0 +1,98 @@
+﻿@model IEnumerable<ContratoLocacao.Web.Models.ListaContratoModelo>
+
+@{
+    ViewBag.Title = "ListaContratos";
+}
+<br />
+<div class="table">
+    <div class="row col-12">
+        @*<div class="col-sm-1">
+            <h6>Olá Luiz! Hoje é dia  - @DateTime.Now.Date.ToString().Substring(1, 10);</h6>
+        </div>*@
+        <div class="col">
+            <h6>Previsão do mês</h6>
+            <div class="alert alert-primary col-md-1" role="alert">
+             R$   
+                @foreach (var item in Model)
+                {
+                    @Html.DisplayFor(modelItem => item.ValorLocacao)
+                }
+            </div>
+        </div>
+    </div>
+</div>
+
+@*<p>
+    <a class="btn btn-success" @Html.ActionLink("Incluir novo contrato", "NovoContrato", "Contrato")<span class="sr-only">(current)</span></a>
+</p>*@
+<table class="table">
+    <thead class="thead-light">
+        <tr>
+            <th colspan="12" scope="col">Lista de contratos</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Codigo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Imovel)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Locatario)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Fiador)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ValorLocacao)   
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PeriodoLocacao)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataInicio)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DataFim)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Codigo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Imovel)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Locatario)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Fiador)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ValorLocacao)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PeriodoLocacao) Meses
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataInicio)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DataFim)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+        </td>
+    </tr>
+}
+
+</table>

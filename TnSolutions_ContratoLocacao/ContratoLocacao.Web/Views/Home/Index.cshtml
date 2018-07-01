@@ -3,9 +3,14 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Novo contrato</h2>
+<br />
+<br />
+<a class="btn btn-success" @Html.ActionLink("Incluir novo contrato", "NovoContrato", "Contrato")<span class="sr-only">(current)</span></a>
+<br />
+<br />
+<a class="btn btn-primary" @Html.ActionLink("Lista de contratos", "ListaContratos", "Contrato")<span class="sr-only">(current)</span></a>
 
-    @Html.ActionLink("Incluir novo contrato", "NovoContrato", "Contrato")
+
 @*<br/>
 
         @Html.ActionLink("Cadastro Locatário", "NovoLocatario", "Locatario")

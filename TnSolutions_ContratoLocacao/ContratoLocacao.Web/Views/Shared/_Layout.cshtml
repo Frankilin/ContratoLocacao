@@ -12,20 +12,14 @@
 <body>
 
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-primary">
-        @*<a class="navbar-brand" href="#">Botão 1</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>*@
-        <img src="~/Imagens/LOGO-TNSOLUTIONS.png" alt="Logo TNSolutions" />
+       
+        <img src="~/Imagens/LOGO-TNSOLUTIONS.png" alt="Logo TNSolutions" class="img"/>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" @Html.ActionLink("Home", "Index", "Home")<span class="sr-only">(current)</span></a>
                 </li>
-                @*<li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>*@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         Cadastros 
@@ -39,7 +33,15 @@
                         <a class="dropdown-item" @Html.ActionLink("Fiador", "NovoFiador", "Fiador")</a>
                     </div>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" @Html.ActionLink("Incluir novo contrato", "NovoContrato", "Contrato")<span class="sr-only">(current)</span></a>
+                </li>
             </ul>
+            @*<a class="navbar-brand" @Html.ActionLink("Incluir novo contrato", "NovoContrato", "Contrato")</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsupportedcontent" aria-controls="navbarsupportedcontent" aria-expanded="false" aria-label="toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>*@
+
             @*<form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
@@ -78,5 +80,11 @@
     <script src="~/Scripts/bootstrap.min.js"></script>
     <script src="~/scripts/Chosen/chosen.jquery.min.js"></script>
     @RenderSection("stripts", required:false)
+    <style>
+        .img {
+            height:30px;
+            width:70px;
+        }
+    </style>
 </body>
 </html>

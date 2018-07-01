@@ -211,6 +211,7 @@
     <Compile Include="Models\CadastroLocadorModelo.cs" />
     <Compile Include="Models\CadastroLocatarioModelo.cs" />
     <Compile Include="Models\InclusaoContratoModelo.cs" />
+    <Compile Include="Models\ListaContratoModelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -236,6 +237,7 @@
     <Content Include="Views\Locador\NovoLocador.cshtml" />
     <Content Include="Views\Fiador\NovoFiador.cshtml" />
     <Content Include="Views\Contrato\NovoContrato.cshtml" />
+    <Content Include="Views\Contrato\ListaContratos.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

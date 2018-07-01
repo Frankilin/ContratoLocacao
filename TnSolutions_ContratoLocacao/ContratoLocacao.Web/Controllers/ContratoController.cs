@@ -139,5 +139,46 @@ namespace ContratoLocacao.Web.Controllers
             return RedirectToAction("NovoContrato", "Contrato");
         }
 
+
+
+
+        public ActionResult ListaContratos()
+        {
+            List<ListaContratoModelo> lista = new List<ListaContratoModelo>();
+
+            try
+            {
+                ContratoNegocio cn = new ContratoNegocio();
+                List<Contrato> c = cn.TodosContratos();
+                foreach (Contrato co in c)
+                {
+                    ListaContratoModelo lcm = new ListaContratoModelo();
+                    Imovel i = new Imovel();
+                    Locatario l = new Locatario();
+                    Fiador f = new Fiador();
+
+                    lcm.Codigo = co.IdContrato;
+                    lcm.Imovel = i.NomeImovel;
+                    lcm.Locatario = l.NomeLocatario;
+                    lcm.Fiador = f.NomeFiador;
+                    lcm.ValorLocacao = co.ValorLocacao;
+                    lcm.PeriodoLocacao = co.PrazoLocacao;
+                    lcm.DataInicio = co.DataInicio;
+                    lcm.DataFim = co.DataFim;
+
+                    lista.Add(lcm);
+                }
+
+             
+                return View(lista);
+            }
+            catch (Exception e)
+            {
+                TempData["Mensagem"] = "Erro: " + e.Message;
+                TempData["Resposta"] = "Falha";
+                return RedirectToAction("Novo", "Home");
+            }
+        }
+
     }
 }

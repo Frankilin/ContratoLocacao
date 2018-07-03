@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Rectangle Name="Rectangle3">
+        <ReportItems>
+          <Textbox Name="Textbox3">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>Os signatários, que contratam nas qualidades indicadas neste contrato, tem entre si, ajustada a presente locação, mediante as seguintes cláusulas e condições:</Value>
+                    <Style>
+                      <FontSize>9pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox3</rd:DefaultName>
+            <Height>1.00781cm</Height>
+            <Width>19.01613cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>0.14111cm</Top>
+        <Left>0.30903cm</Left>
+        <Height>1.04309cm</Height>
+        <Width>19.01613cm</Width>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <BackgroundColor>WhiteSmoke</BackgroundColor>
+        </Style>
+      </Rectangle>
+      <Rectangle Name="Rectangle5">
+        <ReportItems>
+          <Textbox Name="Textbox4">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>I) LOCADOR (ES):</Value>
+                    <Style>
+                      <FontSize>8pt</FontSize>
+                    </Style>
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>Textbox4</rd:DefaultName>
+            <Top>0.27517cm</Top>
+            <Left>0.30903cm</Left>
+            <Height>0.45183cm</Height>
+            <Width>2.58467cm</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+          <Textbox Name="NomeLocador">
+            <CanGrow>true</CanGrow>
+            <KeepTogether>true</KeepTogether>
+            <Paragraphs>
+              <Paragraph>
+                <TextRuns>
+                  <TextRun>
+                    <Value>=First(Fields!NomeLocador.Value, "dsDetalhe1")</Value>
+                    <Style />
+                  </TextRun>
+                </TextRuns>
+                <Style />
+              </Paragraph>
+            </Paragraphs>
+            <rd:DefaultName>NomeLocador</rd:DefaultName>
+            <Top>0.3175cm</Top>
+            <Left>3.07009cm</Left>
+            <Height>0.4095cm</Height>
+            <Width>6.35233cm</Width>
+            <ZIndex>1</ZIndex>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+              <PaddingLeft>2pt</PaddingLeft>
+              <PaddingRight>2pt</PaddingRight>
+              <PaddingTop>2pt</PaddingTop>
+              <PaddingBottom>2pt</PaddingBottom>
+            </Style>
+          </Textbox>
+        </ReportItems>
+        <KeepTogether>true</KeepTogether>
+        <Top>1.49437cm</Top>
+        <Left>0.30903cm</Left>
+        <Height>11.72867cm</Height>
+        <Width>19.01613cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+        </Style>
+      </Rectangle>
+    </ReportItems>
+    <Height>8.98333in</Height>
+    <Style />
+  </Body>
+  <Width>7.83833in</Width>
+  <Page>
+    <PageHeader>
+      <Height>1.37583cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <ReportItems>
+        <Rectangle Name="Rectangle1">
+          <ReportItems>
+            <Image Name="Image1">
+              <Source>Embedded</Source>
+              <Value>LOGOTNSOLUTIONS</Value>
+              <Sizing>FitProportional</Sizing>
+              <Top>0.22225cm</Top>
+              <Left>0.61806cm</Left>
+              <Height>0.56867cm</Height>
+              <Width>1.20367cm</Width>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+              </Style>
+            </Image>
+            <Textbox Name="Textbox1">
+              <CanGrow>true</CanGrow>
+              <KeepTogether>true</KeepTogether>
+              <Paragraphs>
+                <Paragraph>
+                  <TextRuns>
+                    <TextRun>
+                      <Value>CONTRATO DE LOCAÇÃO</Value>
+                      <Style>
+                        <FontSize>14pt</FontSize>
+                        <FontWeight>Bold</FontWeight>
+                        <Color>White</Color>
+                      </Style>
+                    </TextRun>
+                  </TextRuns>
+                  <Style>
+                    <TextAlign>Center</TextAlign>
+                  </Style>
+                </Paragraph>
+              </Paragraphs>
+              <rd:DefaultName>Textbox1</rd:DefaultName>
+              <Top>0.22225cm</Top>
+              <Left>7.0739cm</Left>
+              <Height>1.01445cm</Height>
+              <Width>6.47933cm</Width>
+              <ZIndex>1</ZIndex>
+              <Style>
+                <Border>
+                  <Style>None</Style>
+                </Border>
+                <PaddingLeft>2pt</PaddingLeft>
+                <PaddingRight>2pt</PaddingRight>
+                <PaddingTop>2pt</PaddingTop>
+                <PaddingBottom>2pt</PaddingBottom>
+              </Style>
+            </Textbox>
+          </ReportItems>
+          <KeepTogether>true</KeepTogether>
+          <Height>1.2367cm</Height>
+          <Width>19.90936cm</Width>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+            <BackgroundColor>CornflowerBlue</BackgroundColor>
+          </Style>
+        </Rectangle>
+      </ReportItems>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageHeader>
+    <PageFooter>
+      <Height>2.54cm</Height>
+      <PrintOnFirstPage>true</PrintOnFirstPage>
+      <PrintOnLastPage>true</PrintOnLastPage>
+      <Style>
+        <Border>
+          <Style>None</Style>
+        </Border>
+      </Style>
+    </PageFooter>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>2cm</LeftMargin>
+    <RightMargin>2cm</RightMargin>
+    <TopMargin>2cm</TopMargin>
+    <BottomMargin>2cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DsImpressaoContrato">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>a2134036-a43d-4991-9452-256a0706fd7a</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsDetalhe1">
+      <Query>
+        <DataSourceName>DsImpressaoContrato</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="IdContrato">
+          <DataField>IdContrato</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="NomeLocador">
+          <DataField>NomeLocador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CelularLocador">
+          <DataField>CelularLocador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EnderecoLocador">
+          <DataField>EnderecoLocador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RgLocador">
+          <DataField>RgLocador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CPFLocador">
+          <DataField>CPFLocador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeLocatario">
+          <DataField>NomeLocatario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RgLocatario">
+          <DataField>RgLocatario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="EnderecoLocatario">
+          <DataField>EnderecoLocatario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CelularLocatario">
+          <DataField>CelularLocatario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CPFLocatario">
+          <DataField>CPFLocatario</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Descricao">
+          <DataField>Descricao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeFiador">
+          <DataField>NomeFiador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RgFiador">
+          <DataField>RgFiador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CPFfiador">
+          <DataField>CPFfiador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CelularFiador">
+          <DataField>CelularFiador</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="NomeImovel">
+          <DataField>NomeImovel</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Endereco">
+          <DataField>Endereco</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Complemento">
+          <DataField>Complemento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Bairro">
+          <DataField>Bairro</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Cidade">
+          <DataField>Cidade</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Estado">
+          <DataField>Estado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FIMQUESEDESTINA">
+          <DataField>FIMQUESEDESTINA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ValorLocacao">
+          <DataField>ValorLocacao</DataField>
+          <rd:TypeName>System.Decimal</rd:TypeName>
+        </Field>
+        <Field Name="DataLimitePagamento">
+          <DataField>DataLimitePagamento</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrazoLocacao">
+          <DataField>PrazoLocacao</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="ReajusteACada">
+          <DataField>ReajusteACada</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>DsImpressaoContrato</rd:DataSetName>
+        <rd:SchemaPath>C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\Reports\Data\DsImpressaoContrato.xsd</rd:SchemaPath>
+        <rd:TableName>PR_IMPRESSAO_CONTRATO</rd:TableName>
+        <rd:TableAdapterFillMethod>Fill</rd:TableAdapterFillMethod>
+        <rd:TableAdapterGetDataMethod>GetData</rd:TableAdapterGetDataMethod>
+        <rd:TableAdapterName>PR_IMPRESSAO_CONTRATOTableAdapter</rd:TableAdapterName>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="LOGOTNSOLUTIONS">
+      <MIMEType>image/png</MIMEType>
+      <ImageData>iVBORw0KGgoAAAANSUhEUgAAAHgAAAA3CAYAAADHao5rAAAACXBIWXMAAAsSAAALEgHS3X78AAAEy0lEQVR4nO2cT0hUQRzHv0YGEeVK0CUhEToUVJKBQVAK7UE7JFhd86RH7RAq1KmL3fSol5SOJeRBLwaunRQS+kcRgijYoSB0ixDqYPz0N8vbtzPz/ux763uz84E9vHkzb97u19/Mb37zG2t2d3dhMZdDVluzsQIbjhXYcKzAhmMFTh4ZAAMAXgHYBrDr+mzzvQGuq8V60cmBxBoFcD/gG02x2Nuym0LgwQR8zaeSsiYAIwBuAljhOq9j6l/1G7wAsBZTn4IuAJMA6kK2zwPoYcsuQgicBDOucV3XA3jLIju5wmJHjeo3yMb4RwW22v6InjXG1lwgyXPwXYm4xDyAlgN4nziIUlzws0adBUkWuF5TboLIXRGLK+jnZ+9xOIYOKoEQORvTcB03GZ5zlbxcWsP08hqWV38UVWk9ewrdrU24c1U2uBWgZzeS45VWgZFykUdVDtXmzz/om3iDL9+2pA1JcPo8W/iK8d7raDh5TFatjvvoEU7WfIiXbFLMkWshvc6s63qQPWgvtiISuVJOVobfuQQS99bIHH7v/PP1oONHazE71KkSmagXFuz+cf2gEmBCseSJi7RZco/qBlmuX3EJqkttZoc7lH2ZEskikcc1jlmSaJO9C825qmFZB7WhtgraTApVtrAlJ11kqcDkUIVF0zaVAuv+zNMgstS5cnvLQdC0rUujwDTP9mnup8WSK0Jah+gJK7I/0jwHW5F9kHYnK6kityn2c+laug6iCFVYNG3zJnjRXuvuFp8Bkyig8GAOwAKA2xKHiq5rZf1Q+DEsmrY5U5ZJQyy0il5eJ8dJM4B3AG6E6YNiy+dOBx9oqI0mLm2MwOCh+qBEFpYbdsN+D4otU/jRL1SX2miYNC0n66BELicbowDFlCm27MeSqY5HHHoq7btJKoTTRWLKEOU65ywI
+bbJhmTYOnkyvYP7DZqEse7EBj7tbdKLsizzcUe52YV5kdpgoMCos8oC7QLUrRGIvrX73srw9SEAPEXX0iCQ8k9Nm/QzXUXjXJbFlslzVrhCV0/0YGXMm35meFz3ksYU4qLFyv5TMvc5hWYbX/TIoSbozdYgWiGQAXQ5X3MunSqBMm62Gkw1+Mj6SIvJUyDaNMnFRRUdXokrrkZF3l5G3rENxX1ghrZEeAJiRPZvLZrhOvdOhkmH6EO3Ez3DtlwxHrohPAK4529FSiLxlmaNFwQm6LyHHRducMDcqqxSUajt8FoUlkxOzzvHmBbe4cAQs3JZK15olUiSCuqkmCxYIkWXHYrzwfRKBRPQIIzpZdFhwpFSjwGCR7wXcSmwU4n7e3MLY3Ef82vmLE0ePeEanPMjrMi3LpVoFBg/T2QAiF0R4+HypKAOSIlea1FUdeQ6UrJf3VdRU+wFwIbIuka8kZdGd3krXJDKz4bPvRccWY2xUu8DwEHnL7ykNxxBNO0vtimWOWOK0x225AivwPiqRnZsRBTH6Oy8UVXrUfRmuejk+4Zfhc8/ik+HyWBwqGfZfOBTTxOeSoTjZT8PpJbCjJZys8w2FKfy9Y32cCKzAwWjmkOAZSasNts5Y59SgWIGDI/4LjnObMMdrZGXI8KCwAhuOdbIMxwpsOFZgw7ECG44V2HCswIZjBTYcK7DhWIENxwpsMgD+AwxXfiL3EC0oAAAAAElFTkSuQmCC</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>af950756-6fa3-4d72-9216-5111129b3e48</rd:ReportID>
+</Report>

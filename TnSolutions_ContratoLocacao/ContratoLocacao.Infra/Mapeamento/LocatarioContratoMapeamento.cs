@@ -30,7 +30,7 @@ namespace ContratoLocacao.Infra.Mapeamento
             #region Relacionamento
                 HasRequired(lc => lc.Contratos)
                     .WithMany(c => c.LocatarioContrato)
-                    .HasForeignKey(l => l.IdContrato);
+                    .HasForeignKey(lc => lc.IdContrato);
 
             HasRequired(lc => lc.Locatario)
                     .WithMany(l => l.LocatarioContrato)

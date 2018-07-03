@@ -80,3 +80,7 @@ C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\Cont
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\bin\System.Diagnostics.DiagnosticSource.xml
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\obj\Debug\RdlCompile.cache
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\obj\Debug\RdlCompile.compiled
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\bin\SqlServerTypes\x64\msvcr120.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\bin\SqlServerTypes\x64\SqlServerSpatial140.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\bin\SqlServerTypes\x86\msvcr120.dll
+C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Web\bin\SqlServerTypes\x86\SqlServerSpatial140.dll

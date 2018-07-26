@@ -10,6 +10,8 @@
 
 #pragma warning disable 1591
 
+using System;
+
 namespace ContratoLocacao.Web.Reports.Data {
     
     
@@ -969,6 +971,11 @@ namespace ContratoLocacao.Web.Reports.Data {
                 }
                 xs.Add(dsSchema);
                 return type;
+            }
+
+            internal void AddPR_IMPRESSAO_CONTRATORow(string v1, object nomeLocador, string v2, object celularLocador, string v3, object enderecoLocador, string v4, object rgLocador, string v5, object cPFLocador, string v6, object nomeLocatario, string v7, object rgLocatario, string v8)
+            {
+                throw new NotImplementedException();
             }
         }
         

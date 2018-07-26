@@ -4,8 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Microsoft.Reporting.WebForms;
-
-
+using System.Data;
 
 namespace ContratoLocacao.Web.Controllers
 {
@@ -18,12 +17,19 @@ namespace ContratoLocacao.Web.Controllers
 
 
             var viewer = new Microsoft.Reporting.WebForms.ReportViewer();
+
+            //viewer.ProcessingMode = Microsoft.Reporting.WebForms.ProcessingMode.Local;
             viewer.LocalReport.ReportPath = Request.MapPath(Request.ApplicationPath) + @"Reports\Rpt\Rpt_ImpressaoContrato.rdlc";
             viewer.LocalReport.DataSources.Add(new Microsoft.Reporting.WebForms.ReportDataSource("dsDetalhe1", (System.Data.DataTable) ds.PR_IMPRESSAO_CONTRATO));
+            
+            
+
 
             viewer.SizeToReportContent = true;
             viewer.Width = System.Web.UI.WebControls.Unit.Percentage(100);
+            viewer.Height = System.Web.UI.WebControls.Unit.Percentage(100);
 
+            
             ViewBag.ReportViewer = viewer;
             return View();
         }

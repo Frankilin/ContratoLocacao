@@ -1,5 +1,4 @@
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades.Enum\bin\Debug\ContratoLocacao.Entidades.Enum.dll
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades.Enum\bin\Debug\ContratoLocacao.Entidades.Enum.pdb
-C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades.Enum\obj\Debug\ContratoLocacao.Entidades.Enum.csprojResolveAssemblyReference.cache
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades.Enum\obj\Debug\ContratoLocacao.Entidades.Enum.dll
 C:\Users\frank\Documents\GitHub\ContratoLocacao\TnSolutions_ContratoLocacao\ContratoLocacao.Entidades.Enum\obj\Debug\ContratoLocacao.Entidades.Enum.pdb

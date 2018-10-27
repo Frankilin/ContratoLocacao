@@ -221,11 +221,13 @@
     <Content Include="scripts\jquery-3.0.0.slim.min.js" />
     <Content Include="scripts\jquery-3.0.0.slim.min.map" />
     <Content Include="scripts\jquery-3.0.0.min.map" />
-    <None Include="scripts\jquery-3.3.1.intellisense.js" />
-    <Content Include="scripts\jquery-3.3.1.js" />
-    <Content Include="scripts\jquery-3.3.1.min.js" />
-    <Content Include="scripts\jquery-3.3.1.slim.js" />
-    <Content Include="scripts\jquery-3.3.1.slim.min.js" />
+    <None Include="scripts\jquery-3.2.1.intellisense.js" />
+    <Content Include="scripts\jquery-3.2.1.js" />
+    <Content Include="scripts\jquery-3.2.1.min.js" />
+    <Content Include="scripts\jquery-3.2.1.slim.js" />
+    <Content Include="scripts\jquery-3.2.1.slim.min.js" />
+    <Content Include="scripts\jquery-3.2.1.slim.min.map" />
+    <Content Include="scripts\jquery-3.2.1.min.map" />
     <None Include="scripts\jquery.validate-vsdoc.js" />
     <Content Include="scripts\jquery.validate.js" />
     <Content Include="scripts\jquery.validate.min.js" />
@@ -299,8 +301,6 @@
     <Content Include="Views\Fiador\NovoFiador.cshtml" />
     <Content Include="Views\Contrato\NovoContrato.cshtml" />
     <Content Include="Views\Contrato\ListaContratos.cshtml" />
-    <Content Include="scripts\jquery-3.3.1.slim.min.map" />
-    <Content Include="scripts\jquery-3.3.1.min.map" />
     <Content Include="scripts\umd\popper.min.js.map" />
     <Content Include="scripts\umd\popper.js.map" />
     <Content Include="scripts\umd\popper-utils.min.js.map" />
